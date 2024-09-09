@@ -1,0 +1,26 @@
+<resources>
+    <!-- Textos -->
+    <string name="app_name">TrainningTimer</string>
+    <string name="b1_p_principal">A TIEMPO</string>
+    <string name="b2_p_principal">AMRAP</string>
+    <string name="b3_p_principal">EMOM</string>
+    <string name="b4_p_principal">TABATA</string>
+    <string name="textview_p_fortime">A TIEMPO</string>
+    <string name="textview_p_fortime2">Limite de tiempo:</string>
+    <string name="b_start_timer">COMENZAR</string>
+    <string name="b_detener_timer">DETENER</string>
+    <string name="textview2_p_amrap">Duracion:</string>
+    <string name="teView_emom_sets">Sets</string>
+    <string name="teView_emom_rest">Descanso</string>
+    <string name="button_stop_play_amrap">Comenzar</string>
+    <string name="tview_emom_final">¡COMPLETADO!</string>
+    <string name="registro_tview">ENTRENOS</string>
+    <string name="rondas">RONDAS:</string>
+    <string name="trabajo">TRABAJO:</string>
+    <string name="descanso">DESCANSO:</string>
+    <string name="registro">Registro Entrenos</string>
+
+
+
+
+</resources>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#090909">
+
+    <TextView
+        android:id="@+id/textview_p_amrap"
+        android:layout_width="177dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="117dp"
+        android:layout_marginTop="99dp"
+        android:fontFamily="serif"
+        android:text="@string/b2_p_principal"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textview2_p_amrap"
+        android:layout_width="128dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="484dp"
+        android:text="@string/textview2_p_amrap"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar_amrap"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="270dp"
+        android:layout_height="270dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="204dp"
+        android:background="@drawable/circulo_2_amrap"
+        android:indeterminate="false"
+        android:max="100"
+
+        android:progress="100"
+        android:progressDrawable="@drawable/circulo_1_amrap"
+        android:rotation="-90"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/teview_tiempo_amrap"
+        android:layout_width="154dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="112dp"
+        android:text="00:00"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="60sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_p_amrap" />
+
+    <EditText
+        android:id="@+id/et_amrap"
+        android:layout_width="126dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="488dp"
+        android:backgroundTint="#F6F5F5"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/button_stop_play_amrap"
+        android:layout_width="190dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="592dp"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:text="@string/button_stop_play_amrap"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/amrap_restart"
+        android:layout_width="47dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="320dp"
+        android:layout_marginTop="596dp"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:src="@drawable/ic_restart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/amrap_setTiempo"
+        android:layout_width="64dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="328dp"
+        android:layout_marginTop="524dp"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:text="SET"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/amrap_tv_mins"
+        android:layout_width="52dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="269dp"
+        android:layout_marginTop="526dp"
+        android:text="Mins"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

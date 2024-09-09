@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <string name="b1_p_principal">FOR TIME</string>
+        <string name="b2_p_principal">AMRAP</string>
+        <string name="b3_p_principal">EMOM</string>
+        <string name="b4_p_principal">TABATA</string>
+        <string name="textview_p_fortime">FOR TIME</string>
+        <string name="textview_p_fortime2">Time cap:</string>
+        <string name="b_start_timer">START</string>
+        <string name="b_detener_timer">PAUSE</string>
+        <string name="textview2_p_amrap">Duration:</string>
+        <string name="teView_emom_sets">Sets</string>
+        <string name="teView_emom_rest">Rest</string>
+        <string name="button_stop_play_amrap">Start</string>
+        <string name="tview_emom_final">COMPLETED!</string>
+        <string name="registro_tview">TRAINNINGS</string>
+        <string name="rondas">ROUNDS:</string>
+        <string name="trabajo">WORK:</string>
+        <string name="descanso">REST:</string>
+        <string name="registro">Workout Log</string>
+
+
+
+
+</resources>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#EDEDED"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgview_p_principal"
+        android:layout_width="515dp"
+        android:layout_height="1194dp"
+        android:src="@drawable/fondo_pantalla_principal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#90070707"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clayout3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="-202dp">
+
+            <ImageView
+                android:id="@+id/imgview_dumbell"
+                android:layout_width="101dp"
+                android:layout_height="91dp"
+                android:layout_marginStart="155dp"
+                android:layout_marginTop="18dp"
+                android:src="@drawable/dumbbell"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="186dp"
+                android:layout_height="68dp"
+                android:layout_marginStart="116dp"
+                android:layout_marginTop="100dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="TRAINNING TIMER"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/b4_p_principal"
+                android:layout_width="143dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="32dp"
+                android:backgroundTint="@android:color/holo_blue_light"
+                android:fontFamily="sans-serif-black"
+                android:onClick="tabata"
+                android:text="@string/b4_p_principal"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toEndOf="@+id/b3_p_principal"
+                app:layout_constraintTop_toBottomOf="@+id/b2_p_principal" />
+
+            <Button
+                android:id="@+id/b3_p_principal"
+                android:layout_width="143dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="43dp"
+                android:layout_marginTop="32dp"
+                android:backgroundTint="#EDCD2F"
+                android:fontFamily="sans-serif-black"
+                android:onClick="emom"
+                android:text="@string/b3_p_principal"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/b1_p_principal" />
+
+            <Button
+                android:id="@+id/b2_p_principal"
+                android:layout_width="143dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="24dp"
+                android:backgroundTint="@android:color/holo_green_light"
+                android:fontFamily="sans-serif-black"
+                android:onClick="amrap"
+                android:text="@string/b2_p_principal"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toEndOf="@+id/b1_p_principal"
+                app:layout_constraintTop_toBottomOf="@+id/imgview_dumbell" />
+
+            <Button
+                android:id="@+id/b1_p_principal"
+                android:layout_width="143dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="43dp"
+                android:layout_marginTop="24dp"
+                android:backgroundTint="@android:color/holo_red_light"
+                android:fontFamily="sans-serif-black"
+                android:onClick="forTime"
+                android:text="@string/b1_p_principal"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgview_dumbell" />
+
+            <ImageButton
+                android:id="@+id/img_b_salir"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="177dp"
+                android:layout_marginTop="69dp"
+                android:background="#494747"
+                android:onClick="salir"
+                android:src="@android:drawable/ic_delete"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/b4_p_principal"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/b_registro"
+                android:layout_width="275dp"
+                android:layout_height="39dp"
+                android:layout_marginStart="68dp"
+                android:layout_marginTop="492dp"
+                android:background="@android:color/transparent"
+                android:onClick="registro"
+                android:text="@string/registro"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TouchTargetSizeCheck" />
+            app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TouchTargetSizeCheck" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

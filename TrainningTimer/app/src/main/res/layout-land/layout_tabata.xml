@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <Button
+        android:id="@+id/button_stop_play_tabata"
+        android:layout_width="128dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="584dp"
+        android:layout_marginTop="196dp"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:text="@string/button_stop_play_amrap"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar_tabata"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="376dp"
+        android:layout_height="386dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/circulo_2_amrap"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="100"
+        android:progressDrawable="@drawable/circulo_1_trabata"
+        android:rotation="-90"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/tabata_setTiempo"
+        android:layout_width="105dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="292dp"
+        android:layout_marginTop="488dp"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:text="SET"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/teview_tiempo_tabata"
+        android:layout_width="244dp"
+        android:layout_height="127dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="132dp"
+        android:text="00:00"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="96sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_tabata_rest"
+        android:layout_width="121dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="540dp"
+        android:backgroundTint="#F6F5F5"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/et_tabata_rounds"
+        android:layout_width="115dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="452dp"
+        android:backgroundTint="#F6F5F5"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/et_tabata_work"
+        android:layout_width="119dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="496dp"
+        android:backgroundTint="#F6F5F5"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+    <TextView
+        android:id="@+id/textView_rondas"
+        android:layout_width="91dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="460dp"
+        android:text="@string/rondas"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tview_work"
+        android:layout_width="91dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="496dp"
+        android:text="@string/trabajo"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/teview_rest"
+        android:layout_width="111dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="536dp"
+        android:text="@string/descanso"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/amrap_contRondas"
+        android:layout_width="52dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="72dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
